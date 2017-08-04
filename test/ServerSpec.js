@@ -133,11 +133,11 @@ describe('', function() {
 
   }); // 'Link creation'
 
-  describe('Priviledged Access:', function() {
+  xdescribe('Priviledged Access:', function() {
 
     // /*  Authentication  */
     // // TODO: xit out authentication
-    it('Redirects to login page if a user tries to access the main page and is not signed in', function(done) {
+    xit('Redirects to login page if a user tries to access the main page and is not signed in', function(done) {
       request(app)
         .get('/')
         .expect(302)
@@ -147,7 +147,7 @@ describe('', function() {
         .end(done);
     });
 
-    it('Redirects to login page if a user tries to create a link and is not signed in', function(done) {
+    xit('Redirects to login page if a user tries to create a link and is not signed in', function(done) {
       request(app)
         .get('/create')
         .expect(302)
@@ -157,7 +157,7 @@ describe('', function() {
         .end(done);
     });
 
-    it('Redirects to login page if a user tries to see all of the links and is not signed in', function(done) {
+    xit('Redirects to login page if a user tries to see all of the links and is not signed in', function(done) {
       request(app)
         .get('/links')
         .expect(302)
